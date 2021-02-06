@@ -1,0 +1,37 @@
+
+converts:
+    - name: cards
+      palette: xlibc
+      transparent-color-index: 0
+      style: rlet
+      images:
+        - cards/zero
+        - cards/one
+        - cards/two
+        - cards/three
+        - cards/four
+        - cards/five
+        - cards/six
+        - cards/seven
+        - cards/eight
+        - cards/nine
+        - cards/skip
+        - cards/reverse
+        - cards/wild
+        - cards/draw_two
+        - cards/wild_plus_four
+        - cards/back
+        
+    - name: icons
+      palette: xlibc
+      transparent-color-index: 0
+      style: rlet
+      images:
+        - icons/*
+
+outputs:
+    - type: c
+      include-file: graphics.h
+      converts:
+        - cards
+        - icons
